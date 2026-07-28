@@ -29,7 +29,7 @@
                         <li><a>Item 3</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl">Bus-Ticket</a>
+                <a  class="btn btn-ghost text-xl">Bus-Ticket</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -48,7 +48,7 @@
     </header>
     <main class=" ">
         <!-- //banner section -->
-        <section class="section-banner ">
+        <section id="banner-section" class="section_of-banner ">
             <div class="min-h-screen bg-cover bg-center" style="background-image: url('style/images/banner.png');">
                 <div class="min-h-screen flex items-center justify-center">
                     <div class="text-center  text-white px-6">
@@ -59,7 +59,7 @@
                             testing features allow for a streamlined .
                         </p>
 
-                        <button class="btn border-green-600 bg-green-600 mt-6">
+                        <button onclick="buy_tickets()" class="btn border-green-600 bg-green-600 mt-6">
                             Buy Tickets
                         </button>
                     </div>
@@ -176,7 +176,7 @@
 
 
         <!-- ticket section design -->
-        <section class="border-t-2 border-green-500 rounded-lg mt-10 p-20">
+        <section id="ticket-section" class="hidden border-t-2 border-green-500 rounded-lg mt-10 p-20">
             <div class="full-div ">
 
                 <!-- upper div -->
@@ -501,8 +501,8 @@
 
         </section>
 
-        <footer>
-            <footer class="flex flex-col  p-10 bg-neutral text-neutral-content">
+        
+            <footer class="mt-5 flex flex-col  p-10 bg-neutral text-neutral-content">
                 <div class="flex justify-between">
                     <div>
                         <p>P-Ticket</p>
@@ -541,9 +541,12 @@
 
             </footer>
 
-        </footer>
+        
 
     </main>
+
+    <script src="js-folder/javaScripts.js"></script>
+    <script src="js-folder/utility.js"></script>
 
 </body>
 
