@@ -139,7 +139,7 @@
 
                     <div class="stat">
 
-                        <div class="stat-value">NEW15
+                        <div class="stat-value"><span id="NEW15" >NEW15</span>
                         </div>
                         <div class="font-medium">Coupon Code</div>
 
@@ -161,7 +161,7 @@
 
                     <div class="stat">
 
-                        <div class="stat-value">Couple 20
+                        <div  class="stat-value"><span id="Couple20">Couple20</span>
                         </div>
                         <div class="font-medium">Coupon Code</div>
                     </div>
@@ -419,30 +419,28 @@
                                 <hr class="m-7 border-t-2 border-dotted bg-black ">
 
                                 <div id="set_selected_seat" class="flex flex-col gap-5">
-                                    <div class="flex justify-between">
+                                    
+                                    <div id="default-show-ticket_ID" 
+                                    class="flex justify-between">
                                         <p>C2</p>
                                         <p>Economy</p>
                                         <p>500</p>
 
                                     </div>
-                                    <div class="flex justify-between">
-                                        <p id="">C2</p>
-                                        <p>Economy</p>
-                                        <p>500</p>
-                                    </div>
+                                    
                                 </div>
                                 <hr class="m-7 border-t-2 border-solid border-black ">
 
                                 <div class="flex justify-between">
                                     <p>Total Price</p>
-                                    <p>BDT <span>1100</span></p>
+                                    <p>BDT <span id="total-amountId">1100</span></p>
                                 </div>
                                 <div class="mt-4 mb-5 flex justify-center">
                                     <div class="flex bg-white w-full h-14 rounded-lg justify-between items-center p-2">
-                                        <p><input class="w-96 h-14 border-white " type="text " placeholder="Have any Copupon">
+                                        <p><input id="input_coupon" class="w-96 h-14 border-white " type="text " placeholder="Have any Copupon">
                                         </p>
                                         
-                                        <button type="button"
+                                        <button onclick="applybutton()" id="applt-btn" type="button"
                                             class=" bg-green-500 hover:bg-green-700 text-white font-medium py-2 px-4 rounded disabled:opacity-50 disabled:bg-gray-400 disabled:cursor-not-allowed"
                                             disabled>
                                             Apply
@@ -454,7 +452,7 @@
                                 </div>
                                 <div class="flex justify-between">
                                     <p>Grand total</p>
-                                    <p>BDT <span>1100</span></p>
+                                    <p>BDT <span id="grand_tottal_after_discountID">1100</span></p>
 
                                 </div>
 
